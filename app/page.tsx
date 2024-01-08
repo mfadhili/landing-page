@@ -1,7 +1,10 @@
+import Navbar from "@/app/navbar/page";
+
 export default function Home() {
   return (
     <div>
-      Home Page
+        <Navbar />
+        Home page
     </div>
   )
 }

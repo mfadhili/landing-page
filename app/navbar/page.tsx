@@ -1,7 +1,7 @@
 
 const Navbar = () => (
-    <div>
-
+    <div className={"bg-blue-500"}>
+        Navbar
     </div>
 );
 
