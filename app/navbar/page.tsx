@@ -4,7 +4,7 @@ import ActionButtons from "@/app/navbar/actionButtons";
 
 const Navbar = () => {
     return (
-        <div className={"bg-blue-500"}>
+        <div className={"flex justify-between items-center px-10 border-b-2"}>
             <Logo />
             <Navigation/>
             <ActionButtons/>
