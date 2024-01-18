@@ -16,7 +16,8 @@ function About() {
                     </div>
                     <button className={"bg-blue-500 text-white p-4 justify-center flex md:w-1/3 rounded-lg hover:bg-blue-600"}>Get started</button>
                 </div>
-                <video src="/videos/hero4.mp4" className={"rounded-xl md:w-2/5 p-4 md:p-0 "} autoPlay muted loop/>
+                <video src="/videos/hero4.mp4" className={"rounded-xl md:w-2/5"} autoPlay muted loop/>
+
             </div>
 
         </div>
