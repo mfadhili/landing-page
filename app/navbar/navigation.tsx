@@ -122,6 +122,15 @@ function Navigation() {
                         </Link>
                     </NavigationMenuItem>
 
+                    {/*    Menu Item 4*/}
+                    <NavigationMenuItem>
+                        <Link href={"/docs"} legacyBehavior passHref>
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <span className={"text-base"}>Pricing</span>
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
+
                 </NavigationMenuList>
             </NavigationMenu>
         </div>
