@@ -19,7 +19,7 @@ const HeroSection = () => (
                     Learn More
                 </button>
             </div>
-            <div className="py-10">
+            <div className="pt-10">
                 <video src="/videos/herosection3.mp4" className={"rounded-xl"} autoPlay muted loop />
             </div>
         </div>
