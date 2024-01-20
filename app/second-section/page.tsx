@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 function About() {
     return (
@@ -17,7 +18,32 @@ function About() {
                     <button className={"bg-blue-500 text-white p-4 justify-center flex md:w-1/3 rounded-lg hover:bg-blue-600"}>Get started</button>
                 </div>
                 <video src="/videos/hero4.mp4" className={"rounded-xl md:w-2/5"} autoPlay muted loop/>
+            </div>
 
+            {/*Products section*/}
+            <div className="flex-col items-center justify-center">
+                <div className="flex justify-center text-3xl font-bold md:text-5xl pt-5 pb-10 bg-gradient-to-r from-purple-400 to-blue-800 bg-clip-text text-transparent">
+                    Product Features
+                </div>
+                <div className="grid grid-cols-1 md:grid md:grid-cols-3 gap-4  p-4 px-40">
+                    {features.map((feature,index) => (
+
+                        <div key={index} className={"flex-col space-y-6 pb-10 border p-8 rounded-xl items-center justify-center w-full hover:scale-105 transform transition-all duration-500 ease-in-out"}>
+                            <div className="text-gray-600 text-3xl font-bold">
+                                <Image src={feature.image} alt={feature.alt} width={300} height={300} className={"object-contain h-20 w-20 items-center justify-center flex mb-10"}/>
+                                <div className="">
+                                    <div className="text-2xl pb-4 bg-gradient-to-t from-black to-gray-400  bg-clip-text text-transparent">
+                                        {feature.name}
+                                    </div>
+                                    <div className="text-lg bg-gradient-to-r from-gray-800 to-gray-500 bg-clip-text text-transparent" >
+                                        {feature.description}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    ))}
+                </div>
             </div>
 
         </div>
